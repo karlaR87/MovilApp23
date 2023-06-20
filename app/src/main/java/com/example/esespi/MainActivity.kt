@@ -8,6 +8,11 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 import java.sql.*
+import android.renderscript.*
+import android.widget.TextView
+import android.graphics.*
+import android.graphics.drawable.BitmapDrawable
+import android.graphics.drawable.Drawable
 
 private lateinit var connSQL: conexionSQL
 private lateinit var Usuario: EditText
@@ -24,6 +29,7 @@ class MainActivity : AppCompatActivity() {
         Contraseña=findViewById(R.id.txtContraseñaLogIn)
         Login=findViewById(R.id.btnIniciarSesiónLogIn)
         connSQL = conexionSQL()
+
 
         Login.setOnClickListener {
             val usuario = Usuario.text.toString()
@@ -75,5 +81,4 @@ class MainActivity : AppCompatActivity() {
     private fun showToast(message: String) {
         Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
     }
-
 }
