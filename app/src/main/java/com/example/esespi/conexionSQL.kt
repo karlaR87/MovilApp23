@@ -11,7 +11,7 @@ class conexionSQL {
     // Variables para la cadena de conexión
     private val endpoint = "expo2023.coadsqodqdsq.us-east-2.rds.amazonaws.com"
     private val port = "1433"
-    private val dbName = "pruebas"
+    private val dbName = "ESESPI_Expo1"
     private val username = "expo"
     private val password = "fbXJ7f0W"
 
